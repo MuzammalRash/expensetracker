@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_marginLeft="14dp"
+    android:layout_marginTop="20dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/laycategory"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/categoryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laycategory"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Total Budget:"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textBudget">
+
+                <TextView
+                    android:id="@+id/BudgetList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="2dp"
+                    android:textSize="11sp"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/BudgetList"
+                    android:text=".Rs"
+                    android:textColor="#008000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textremianing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BudgetList"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:text="Remaining Budget:"
+                    android:textColor="@color/colorPrimary"
+                   />
+
+                <TextView
+                    android:id="@+id/budgetlistremaining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textremianing"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textremianing"
+                    android:layout_toRightOf="@id/budgetlistremaining"
+                    android:text=".Rs"
+                    android:textColor="#008000"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laycategory"
+                android:gravity="center_horizontal"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

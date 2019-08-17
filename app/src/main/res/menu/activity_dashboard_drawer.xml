@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/addincome"
+            android:icon="@drawable/icome"
+            android:title="Add Income" />
+        <item
+            android:id="@+id/createlist"
+            android:icon="@drawable/list"
+            android:title="Create List" />
+        <item
+            android:id="@+id/expenditure"
+            android:icon="@drawable/expenditure"
+            android:title="Expenditure" />
+
+
+        <item
+            android:id="@+id/report"
+            android:icon="@drawable/report"
+            android:title="Report" />
+
+        <item
+            android:id="@+id/ReportFinal"
+            android:icon="@drawable/graphic"
+            android:title="Report Graphical" />
+        <item
+            android:id="@+id/reminder"
+            android:icon="@drawable/reminder"
+            android:title="Reminder" />
+
+
+        <item
+            android:id="@+id/DeleteH"
+            android:icon="@drawable/deleteicon"
+            android:title="Delete History" />
+
+    </group>
+
+
+
+</menu>

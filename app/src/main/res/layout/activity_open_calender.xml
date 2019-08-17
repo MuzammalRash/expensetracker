@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenCalender">
+
+<RelativeLayout
+    android:id="@+id/titletext"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/arow"/>
+    <TextView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="40dp"
+        android:paddingLeft="20dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/titlebar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_below="@id/titletext"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titletext"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="First Select Date "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/textdate"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#C5C3C3"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+        android:theme="@style/CalenderViewCustom"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"></CalendarView>
+
+
+    <TextView
+        android:id="@+id/selectdate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/calender"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:hint="First Date Select"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/selectdate"
+        android:layout_margin="20dp"
+        android:background="@drawable/border"
+        android:hint="Description:"
+        android:paddingLeft="10dp" />
+
+
+    <EditText
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border"
+        android:hint="Ammount:"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/addexpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/money"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Add Expenses"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/uid"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

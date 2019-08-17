@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD INCOME"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/income"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:layout_below="@id/text"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:hint="Enter Total income xx,xxxx -Rs"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="20dp"
+        />
+    <Button
+        android:id="@+id/sendincome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add income"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/income"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

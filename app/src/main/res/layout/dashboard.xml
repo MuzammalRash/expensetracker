@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/totalammount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="50dp"
+                android:text="Total Ammount:"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/remaing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginBottom="30dp"
+                android:text="Remaining Balance:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ammount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/totalammount"
+                android:text="0.00"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/remaingbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="35dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="30dp"
+                android:layout_toRightOf="@id/remaing"
+                android:text="0.00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/ammount"
+                android:text=".Rs"
+                android:textColor="#008000"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text=".Rs"
+                android:textColor="#008000"
+                android:layout_toRightOf="@id/remaingbalance"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Insuficient Balance"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:background="@null"
+            android:hint="Enter Title"
+            android:layout_marginTop="150dp"/>
+
+        <TextView
+            android:id="@+id/Msg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:visibility="gone"
+            android:layout_below="@id/Title"
+            android:background="@null"
+            android:hint=""
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/BudgetView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardView">
+
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="Category List"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/CategoryRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/header">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowExpensesDetail">
+
+    <RelativeLayout
+
+        android:id="@+id/titlebarview1"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arow"/>
+        <TextView
+            android:id="@+id/titlebarview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:paddingLeft="20dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/expensesDetailSheet"
+        android:layout_below="@id/titlebarview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

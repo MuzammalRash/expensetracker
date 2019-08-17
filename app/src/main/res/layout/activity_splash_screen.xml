@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dytstudio.signup.HomeActivity">
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg" />
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="77.87dp"
+        android:layout_height="77dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="@dimen/btn_height"
+        android:layout_marginLeft="@dimen/space40"/>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/space20"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_below="@id/text"
+            android:id="@+id/Start"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:text="Getting Start"
+            android:textAllCaps="false"
+            android:textSize="@dimen/txt16"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/btn_white_selector"
+            android:layout_marginBottom="@dimen/space20"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_above="@id/ll_bottom"
+        android:layout_margin="@dimen/space40"
+        android:text="Expensive Tracker App -Manage the All Income."
+        android:textSize="@dimen/txt30"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>
